@@ -1,0 +1,28 @@
+.insideBox,.top1{
+    box-shadow:0 0 10px black;
+}
+.top4{
+    box-shadow: 0 0 6px rgb(0, 0, 0);
+    transition: 0.2s;
+}
+.top4:active{
+    transform: scale(0.86);
+}
+.top4:hover{
+    background-color: #004a45;
+}
+
+
+/* ----------------------animations---------------- */
+
+.top2{
+    animation: leftToRightAnimation ease-in-out 1s;
+}
+@keyframes leftToRightAnimation {
+    0%{
+        padding-left: 300px;
+        padding-right: 300px;
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
+}

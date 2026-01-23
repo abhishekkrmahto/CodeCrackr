@@ -1,0 +1,5 @@
+body{
+    background:linear-gradient(to right,rgb(50, 50, 72), rgb(115, 115, 254));
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
