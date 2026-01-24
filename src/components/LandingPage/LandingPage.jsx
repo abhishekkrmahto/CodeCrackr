@@ -31,8 +31,8 @@ const LandingPage = () => {
           <div
             className="top4 rounded-2xl font-bold cursor-pointer bg-teal-700"
           >
-            <div className="get-started-with-google-button p-3" onClick={(e)=>{navigate('/home')}}>
-              <h1>Get Started With Google</h1>
+            <div className="get-started-with-google-button p-3" onClick={(e)=>{navigate('/loginPage')}}>
+              <h1>Get Started</h1>
             </div>
           </div>
         </div>

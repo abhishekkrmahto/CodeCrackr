@@ -1,0 +1,26 @@
+@keyframes boxAnimation {
+    0%{
+        padding: 0px;
+    }
+}
+
+@keyframes displayNoneAnimation {
+    0%{
+        padding: 0px;
+        opacity: 0;
+    }
+    65%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.box{
+    animation: boxAnimation 1s ease-in-out;
+}
+
+.display-none-animation{
+    animation: displayNoneAnimation 1s ease-in-out;
+}
