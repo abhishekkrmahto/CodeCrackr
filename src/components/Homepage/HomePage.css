@@ -1,0 +1,36 @@
+.roleBoxes{
+    flex-wrap: wrap;
+    height: max-content;
+    min-width: 500px;
+    max-width: 700px;
+    max-height: 800px;
+    overflow-y: scroll;
+}
+
+.roleBoxes::-webkit-scrollbar{
+    display: none;
+}
+.role-box:hover{
+    background-color: #363674;
+}
+
+@keyframes displayNoneAnimation {
+    0%{
+        padding: 0px;
+        opacity: 0;
+    }
+    65%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.box{
+    animation: boxAnimation 1s ease-in-out;
+}
+
+.display-none-animation{
+    animation: displayNoneAnimation 1s ease-in-out;
+}
