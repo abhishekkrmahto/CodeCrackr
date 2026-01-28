@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import '../Homepage/Homepage.css'
+import NavBar from "../NavBar/NavBar";
 
 const HomePage = () => {
   const [jobRolesArray, setJobRolesArray] = useState([
@@ -23,6 +24,9 @@ const HomePage = () => {
 
   return (
     <div className="">
+      <nav className="absolute top-1 w-screen h-[70px] flex justify-between gap-2 mt-2">
+        <NavBar></NavBar>
+      </nav>
       <div className="container w-screen h-screen flex justify-center items-center">
 
         <div className="practice-box display-none-animation">
