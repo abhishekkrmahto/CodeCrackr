@@ -13,14 +13,6 @@ const HomePage = () => {
       role: "Backend Developer",
       pageLink: "backEndPage",
     },
-    {
-      role: "Full Stack Developer",
-      pageLink: "fullstackPage",
-    },
-    {
-      role: "AWS Developer",
-      pageLink: "awsPage",
-    },
   ]);
 
   const navigate = useNavigate();
