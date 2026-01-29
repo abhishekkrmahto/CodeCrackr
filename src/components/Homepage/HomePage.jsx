@@ -1,26 +1,29 @@
 import React, { useState } from "react";
 import '../Homepage/Homepage.css'
 import NavBar from "../NavBar/NavBar";
+import { useNavigate } from "react-router-dom";
 
 const HomePage = () => {
   const [jobRolesArray, setJobRolesArray] = useState([
     {
       role: "FrontEnd Developer",
-      pageLink: "/frontEndPage",
+      pageLink: "frontEndPage",
     },
     {
       role: "Backend Developer",
-      pageLink: "/backEndPage",
+      pageLink: "backEndPage",
     },
     {
       role: "Full Stack Developer",
-      pageLink: "/fullstackPage",
+      pageLink: "fullstackPage",
     },
     {
       role: "AWS Developer",
-      pageLink: "/awsPage",
+      pageLink: "awsPage",
     },
   ]);
+
+  const navigate = useNavigate();
 
   return (
     <div className="">
@@ -41,7 +44,10 @@ const HomePage = () => {
             {jobRolesArray.map((item, index) => {
               return (
                 <>
-                  <div key={index} className="role-box box cursor-pointer box border w-[270px] h-[50px] rounded-2xl text-center flex justify-center items-center">
+                  <div onClick={(e)=>{
+                    e.preventDefault();
+                    navigate(`/questions/${item.pageLink}`)
+                  }} key={index} className="role-box box cursor-pointer box border w-[270px] h-[50px] rounded-2xl text-center flex justify-center items-center">
                     <h1 className="font-bold text-xl ">{item.role}</h1>
                   </div>
                 </>
